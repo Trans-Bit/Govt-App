@@ -1,0 +1,76 @@
+.container {
+  text-align: center;
+  margin: 150px 0;
+}
+.f-con {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.msg {
+  height: 20px;
+  background-color: red;
+  padding: 15px;
+  color: white;
+  position: relative;
+  top: 40px;
+  display: none;
+}
+.msg1 {
+  height: 20px;
+  background-color: red;
+  padding: 15px;
+  color: white;
+  position: relative;
+  top: 40px;
+}
+.heading {
+  color: #5d4eaa;
+  font-size: 35px;
+}
+input,
+button {
+  margin: 10px;
+}
+input {
+  height: 30px;
+  width: 25%;
+  padding: 10px;
+  border: 0.05px solid #5d4eaa;
+  transition: all 0.5s ease-in-out;
+}
+button {
+  border: 0;
+  box-shadow: none;
+  height: 40px;
+  width: 10%;
+  color: white;
+  background-color: #5d4eaa;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #6f64a3;
+}
+input:focus {
+  width: 40%;
+  border: 0.5px solid #5d4eaa;
+}
+.text {
+  margin: 10px;
+  font-size: 15px;
+}
+.sos {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  font-size: 15px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 10px;
+  float: right;
+}
+.sos:hover,
+sos:active {
+  background-color: red;
+}
