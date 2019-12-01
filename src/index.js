@@ -4,13 +4,13 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
-import store from "./redux/index";
+// import store from "./redux/index";
 import "../node_modules/video-react/dist/video-react.css";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  // <Provider store={store}>
+  <App />,
+  // </Provider>,
   document.getElementById("root")
 );
 

@@ -4,7 +4,7 @@ import "./page.css";
 import { db } from "../firebase";
 import { identifier } from "@babel/types";
 import { connect } from "react-redux";
-import { addUser } from "../redux/actions/index";
+// import { addUser } from "../redux/actions/index";
 import { stat } from "fs";
 
 export class Login extends Component {
@@ -25,7 +25,7 @@ export class Login extends Component {
           if (this.state.password === a.data().password) {
             console.log("login successful");
             let dat = a.data();
-            this.props.addUser(dat);
+            // this.props.addUser(dat);
           } else {
             console.log("invalid password");
             this.setState({ hide: false });
@@ -72,12 +72,13 @@ export class Login extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  data: state
-});
+// const mapStateToProps = state => ({
+// data: state
+// });
 
-const mapActionsToProps = {
-  addUser
-};
+// const mapActionsToProps = {
+// addUser
+// };
 
-export default connect(mapStateToProps, mapActionsToProps)(Login);
+// export default connect(mapStateToProps, mapActionsToProps)(Login);
+export default Login;
